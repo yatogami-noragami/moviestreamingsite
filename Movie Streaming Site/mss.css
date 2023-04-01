@@ -1,0 +1,161 @@
+body {
+    overflow-x: hidden;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.blur {
+    filter: blur(30px);
+    pointer-events: none;
+}
+
+.navbar-nav .Active {
+    color: darkred;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px darkred, 0 0 30px darkred, 0 0 40px darkred;
+}
+
+.nav-link:hover {
+    transition: all 300ms ease-in-out;
+    color: darkred;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px darkred, 0 0 30px darkred, 0 0 40px darkred;
+}
+
+#searchBtn i {
+    color: darkred;
+}
+
+#searchBar {
+    position: fixed;
+    top: 5%;
+    left: 0;
+    z-index: 1;
+}
+
+#searchBox {
+    color: darkred;
+    letter-spacing: 5px;
+}
+
+#accountBtn {
+    position: fixed;
+    top: 10%;
+    right: 0;
+    z-index: 99;
+}
+
+#accountChild {
+    position: fixed;
+    top: 17%;
+    right: 0;
+    z-index: 99;
+}
+
+.posterImage {
+    width: 1000px;
+    height: 600px;
+}
+
+.watchTrailer {
+    transition: all 300ms ease-in-out;
+    width: 5%;
+}
+
+.viewInfo {
+    transition: all 300ms ease-in-out;
+    width: 5%;
+}
+
+.viewInfo:hover {
+    width: 20%;
+}
+
+.watchTrailer:hover {
+    width: 20%;
+}
+
+.movieImage img {
+    height: 400px;
+}
+
+.movieImage:hover {
+    transition: all 300ms ease-in-out;
+    transform: scale(0.8, 0.8);
+}
+
+#player {
+    height: 500px;
+}
+
+#playingImage {
+    height: 250px;
+}
+
+#bttBtn {
+    position: fixed;
+    top: 70%;
+    right: -20%;
+}
+
+#bttBtn i {
+    color: darkred;
+}
+
+#bttBtn:hover i {
+    transition: all 300ms linear;
+    text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 20px red, 0 0 30px red, 0 0 40px red;
+}
+
+@keyframes btt_animation {
+    from {
+        right: -20%;
+    }
+
+    to {
+        right: 5%;
+    }
+}
+
+.pagination .active {
+    color: white;
+}
+
+@media only screen and (max-width: 992px) {
+    .posterImage {
+        width: 1000px;
+        height: 500px;
+    }
+
+    .movieImage img {
+        height: 300px;
+    }
+
+    #player {
+        height: 300px;
+    }
+
+    #playingImage2 {
+        height: 300px;
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+    .posterImage {
+        width: 1000px;
+        height: 200px;
+    }
+
+    .movieImage img {
+        height: 200px;
+    }
+
+    #player {
+        height: 200px;
+    }
+
+    #playingImage2 {
+        height: 300px;
+    }
+}
